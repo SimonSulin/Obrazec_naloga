@@ -11,7 +11,7 @@ fullForm.addEventListener("button", (e) => {
     Swal.fire({
         toast: true,
         icon: 'success',
-        title: 'UPN Oddan',
+        title: 'Account created',
         showConfirmButton: false,
         timer: 3000,
         position: 'top',
