@@ -1,0 +1,57 @@
+<html DOCTYPE!>
+<head>
+<title>Obrazec</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon/logo.png" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/6d8343631e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+        <div class="main">
+			<div class="slika">
+            <img id="photo" src="slike/slika.png">
+            <input type="file" id="file" >
+            <label for="file" id="file-label" >Izberi sliko</label>  
+			</div>
+            <div class="title">Register Account</div>
+            <form method="get" id="fullForm">
+                <div class="input">
+                    <input type="text" placeholder="Your name" pattern="[A-Za-z]"  maxlength="32" >
+                    <i class="far regular fa-user"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Username" >
+					<i class="far fa-address-card"></i>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Your Email" >
+                    <i class="far regular fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" >
+                    <i class="fas solid fa-lock"></i>
+                    <label for="password" id="label1">Must contain atleast 8 characters, one lower case letter, one upper case letter and one character</label>
+                </div>
+                <div class="input">
+                    <input id="password2"type="password" placeholder="Confirm Password" >
+                    <i class="fas solid fa-unlock"></i>
+                    <label for="password2" id="label2">Passwords must match</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" id="checkbox1" required>
+                    <label for="checkbox1" id="label3">Agree to the Terms and Conditions and Privacy Policy</label>
+                </div>
+                <div class="button">
+                    <input type="submit" id="btn-submit" value="Register" >
+                </div>
+                
+            </form>
+        </div>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/password.js"></script>
+    <script src="javascript/sweetaleartcode.js"></script>
+    <script src="javascript/sweetaleart.js"></script>
+
+</body>
+
+</html>
