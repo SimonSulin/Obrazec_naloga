@@ -1,12 +1,6 @@
-let submit_button = document.querySelector('#btn-submit');
+var submit_button = document.getElementById("btn_submit");
 
-submit_button.addEventListener("click", function(e) {
-    let required = document.querySelectorAll("input[required]");
-    required.forEach(function(element) {
-    });
-});
-
-fullForm.addEventListener("button", (e) => {
+fullForm.addEventListener("submit", (e) => {
     e.preventDefault();
     Swal.fire({
         toast: true,
@@ -17,6 +11,6 @@ fullForm.addEventListener("button", (e) => {
         position: 'top',
         timerProgressBar: true,
     }).then((result) => {
-        document.querySelector('fullForm').button();
+        document.getElementById('fullForm').submit();
     });
 });
